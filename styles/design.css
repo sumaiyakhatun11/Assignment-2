@@ -1,0 +1,51 @@
+.cart-icon::before {
+  content: "🛒"; 
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.nav-bar{
+    justify-content: space-between;
+    
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.nav-logo{
+    width: auto;
+    height:5rem ;
+}
+.nav-items{
+
+     list-style: none;
+    
+    gap: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .nav-items li:not(:last-child){
+        display: none;
+    }
+    .nav-bar{
+        max-width: 100%;
+       
+
+    }
+    
+}
