@@ -327,6 +327,9 @@ justify-content: center;
   justify-content: space-between;
   gap:1rem;
 }
+button:hover{
+ background-color: rgb(243, 201, 147);
+}
 
 
 /* responsive */
