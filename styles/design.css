@@ -127,8 +127,7 @@ nav ul li a{
   height:30rem ; 
   gap:1rem; 
   border-radius: 8px;
-  
-  box-sizing: border-box;
+
   background-color: #fff;
   
 }
@@ -147,6 +146,29 @@ nav ul li a{
   gap:1.3rem;
 }
 
+/* plant-lover */
+.plant-lover-container{
+  height: 38rem;
+}
+.plant-lover-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.plant-lover{
+  display: flex;
+  margin-top:6rem ;
+  justify-content: space-between;
+  gap: 1.3rem;
+  align-items: center;
+}
+.plant-lover-title{
+
+  font-weight: bold;
+  font-size: 50px;
+}
 
 /* responsive */
 @media screen and (max-width: 576px){
@@ -173,12 +195,14 @@ nav ul li a{
    .sample-card {
     width: 100%; 
     max-width: 11rem; 
+    height: auto;
   }
   .cards{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap:1.2rem;
-   justify-content: center;
+  justify-content: center;
+  
    
 }
 .add-card-button{
@@ -189,6 +213,24 @@ nav ul li a{
 
 
 }
+.plant-lover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.rem;
+  padding: 0;
+  gap:1rem;
+}
+.plant-lover-image{
+  width: 100%;
+  margin-top: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 0.5rem;   /* Left/right margin = 8px */
+    padding: 0.5rem 0;  /* Top/bottom padding = 8px */
+  }
 
     
 }
