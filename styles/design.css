@@ -1,3 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 .cart-icon::before {
   content: "🛒"; 
   font-size: 20px;
@@ -35,10 +59,97 @@ nav ul li a{
 }
 
 
+/* banner */
+.banner{
+     max-width: 1140px;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: last baseline;
+   
+
+}
+.banner-title{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.banner img {
+    width:36rem ;
+    height: 22rem;
+  /* display: block; */
+}
+.banner-description{
+    font-size: 22px;
+
+}
+
+/* font color */
+.orange-color{
+    color: rgba(233, 90, 8, 1);
+}
+.light-gray{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-center{
+  text-align: center;
+}
+.text-bold{
+  font-weight: bold;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* card */
+.card-title {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.add-card-button{
+   background-color: rgba(233, 90, 8, 1); 
+   color: white;
+   padding: 1.5rem 3.1rem;
+   border: none;
+
+
+}
+.sample-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width:16rem;
+  height:30rem ; 
+  gap:1rem; 
+  border-radius: 8px;
+  
+  box-sizing: border-box;
+  background-color: #fff;
+  
+}
+
+
+.sample-card p,
+.sample-card img{
+  margin: 0;
+  padding: 0;
+  display: block; /* helpful for image */
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1.3rem;
+}
 
 
 /* responsive */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 576px){
     .nav-items li:not(:last-child){
         display: none;
     }
@@ -47,5 +158,37 @@ nav ul li a{
        
 
     }
+      .banner {
+    flex-direction: column-reverse;
+    
+    align-items: center;
+    padding: 0px;
+  }
+
+  .banner img {
+    width: 100%;
+   margin-bottom:28px ;
+    height: auto;
+  }
+   .sample-card {
+    width: 100%; 
+    max-width: 11rem; 
+  }
+  .cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:1.2rem;
+   justify-content: center;
+   
+}
+.add-card-button{
+   background-color: rgba(233, 90, 8, 1); 
+   color: white;
+   padding: 1rem 3.1rem;
+   border: none;
+
+
+}
+
     
 }
